@@ -20,7 +20,10 @@ class LoginPage extends StatelessWidget {
 
     // try login
     try {
-      await authService.signInWithEmailPassword(_emailController.text, _pwController.text);
+      await authService.signInWithEmailPassword(
+        _emailController.text,
+        _pwController.text
+      );
     }
     
     // catch any errors
