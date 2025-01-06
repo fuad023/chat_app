@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "778464187551",
+    "project_id": "mitch-chat-app-c756a",
+    "storage_bucket": "mitch-chat-app-c756a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778464187551:android:62110c9108a55981ad7eaa",
+        "android_client_info": {
+          "package_name": "com.fuad.chat_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4zTuZtGr4qeA1QHi9mTAtU42kv2lDYSQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
