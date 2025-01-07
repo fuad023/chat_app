@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:chat_app/pages/settings_page.dart';
+import 'package:chat_app/auth/auth_service.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
+  
+  void logout() {
+    // get auth service
+    final auth = AuthService();
+    auth.signOut();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +37,10 @@ class MyDrawer extends StatelessWidget {
                 child: ListTile(
                   title: const Text("H O M E"),
                   leading: const Icon(Icons.home),
-                  onTap: () {},
+                  onTap: () {
+                    // pop the drawer
+                    Navigator.pop(context);
+                  },
                 ),
               ),
 
@@ -39,7 +50,18 @@ class MyDrawer extends StatelessWidget {
                 child: ListTile(
                   title: const Text("S E T T I N G S"),
                   leading: const Icon(Icons.settings),
-                  onTap: () {},
+                  onTap: () {
+                    // pop the drawer
+                    Navigator.pop(context);
+
+                    // navigate to settings page
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SettingsPage(),
+                      ),
+                    );
+                  },
                 ),
               ),
             ],
@@ -51,7 +73,7 @@ class MyDrawer extends StatelessWidget {
             child: ListTile(
               title: const Text("L O G O U T"),
               leading: const Icon(Icons.logout),
-              onTap: () {},
+              onTap: logout,
             ),
           ),
         ],
