@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:chat_app/firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:chat_app/themes/light_mode.dart';
-import 'package:chat_app/auth/auth_gate.dart';
+import 'package:chat_app/services/auth/auth_gate.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
